@@ -8,6 +8,20 @@ void setup() {
 
 
 void draw() {
+  
+  fill(121, 259, 33);
+  ellipse(400, 400, 325, 350); //body
+  ellipse(400, 200, 250, 250); //head
+  ellipse(270, 580, 150, 100); //left foot
+  ellipse(520, 580, 150, 100); //right foot
+  fill(255);
+  ellipse(400, 150, 75, 75); //eye
+  ellipse(480, 180, 50, 50);
+  ellipse(320, 180, 50, 50);
+  fill(0);
+  ellipse(320, 180, 25, 25);
+  ellipse(480, 180, 25, 25);
+  ellipse(400, 150, 25, 25); 
  
   
   head.eyes();
