@@ -1,6 +1,7 @@
 class Monster{
  
   Monster(){
+    
    
    
    
@@ -12,13 +13,13 @@ class Monster{
     
   }
   
-  void head(){
-   fill(161, 29, 33);
+  void head(color h){
+   fill(h);
   ellipse(400, 400, 325, 350); //body
   ellipse(400, 200, 250, 250); //head
   ellipse(270, 580, 150, 100); //left foot
   ellipse(520, 580, 150, 100); //right foot
-  fill(255);
+  //fill(255);
  //ellipse(400, 180, 75, 75); //eye
   //fill(0);
   //ellipse(400, 180, 35, 35); 
@@ -29,23 +30,23 @@ class Monster{
   void eye(){
 
   //left eye lid
-  fill(212, 49, 39);
-  ellipse(140, 120, 100, 100);
+  fill(255, 173, 153);
+  ellipse(440, 270, 100, 100);
   //eye
   fill(0);
-  ellipse(140, 120, 90, 80);
+  ellipse(440, 270, 90, 80);
 
 
   //right eye lid
-  fill(212, 49, 39);
-  ellipse(360, 120, 100, 100);
+  fill(255, 173, 153);
+  ellipse(500, 180, 90, 90);
   //eye ball
   fill(0);
-  ellipse(360, 120, 90, 80);
+  ellipse(500, 180, 75, 75);
 
 
   //middle eye lid
-  fill(212, 49, 39);
+  fill(255, 173, 153);
   ellipse(400, 180, 90, 90);
   //eye ball
   fill(0);
@@ -57,7 +58,7 @@ class Monster{
   int pY = (int) map(mouseY, 0, height, -10, 10); 
   fill(255);
   ellipse(pX + x, pY + y, 20, 20);  //middle pupil following mouse
-   ellipse(pX + xx, pY + yy, 20, 20); // left
+  // ellipse(pX + xx, pY + yy, 20, 20); // left
     ellipse(pX + a, pY + b, 20, 20); // right
   fill(0);
     
