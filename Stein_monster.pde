@@ -11,20 +11,38 @@ void draw() {
   
   //Monster 1
   fill(74, 255, 89);
-  ellipse(500, 500, 325, 350); //body
-  ellipse(500, 300, 250, 250); //head
-  ellipse(370, 680, 150, 100); //left foot
-  ellipse(620, 680, 150, 100); //right foot
+  //body
+  ellipse(450, 450, 325, 350); 
+  
+  //head
+  ellipse(450, 250, 250, 250); 
+  
+  //left foot
+  ellipse(330, 630, 150, 100); 
+  
+  //right foot
+  ellipse(570, 630, 150, 100); 
+  
+  //eye
   fill(255);
-  ellipse(500, 280, 75, 75); //eye
+  ellipse(450, 230, 75, 75); 
+  
+  //mouth
   fill(0);
-  ellipse(500, 280, 35, 35); 
-  rect(455, 340, 100, 50);
+  ellipse(450, 230, 35, 35); 
+  rect(405, 290, 100, 50);
 
   if (keyPressed) {
-    if (key=='e') {    //makes eye blink
-      fill(28, 61, 113);
-      ellipse(500, 280, 75, 75);
+    
+    //toggle
+    if (key=='e') {    
+      fill(0);
+      ellipse(450, 230, 75, 75);
+      fill(255, 40, 13);
+      ellipse(450, 230, 25, 25);
+      ellipse(250, 250, 25, 25);
+      ellipse(650, 250, 25, 25);
+      
     }
   }
   
@@ -63,4 +81,13 @@ void draw() {
    fill2 = fill3;
   }
   
+  if (keyPressed) {
+    
+    //makes eye blink
+    if (key=='e') {    
+      fill(0);
+      ellipse(mouseX-20, mouseY-60, 25, 25);          
+      ellipse(mouseX+20, mouseY-60, 25, 25);
+    }
+  }
 }
