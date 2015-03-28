@@ -1,6 +1,0 @@
-class Monstermover extends Monster{
-  
-  
-  
-  
-}
