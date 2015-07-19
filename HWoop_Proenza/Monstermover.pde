@@ -1,0 +1,6 @@
+class Monstermover extends Monster{
+  
+  
+  
+  
+}
